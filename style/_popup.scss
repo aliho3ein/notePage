@@ -1,0 +1,83 @@
+.PopUp-main {
+  height: 30%;
+  min-height: 300px;
+  width: 400px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 0%;
+  z-index: 999;
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  justify-content: start;
+  align-items: center;
+  margin: auto;
+  top: -5000px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all 200ms ease-in;
+  user-select: none;
+
+  .EntHeight {
+    height: 30px;
+    width: 180px;
+    margin-top: 60px;
+    padding: 0px 5px;
+    border: 2px solid #ccc;
+    font-size: 1rem;
+    &:focus {
+      border: 1px solid $primary-color;
+      margin-top: 61px;
+    }
+  }
+
+  .EntWidth {
+    @extend .EntHeight;
+    margin-top: 20px;
+    &:focus {
+      margin-top: 20px;
+    }
+  }
+
+  input::placeholder {
+    color: #aaa;
+  }
+
+  .Pcolor {
+    height: 30px;
+    width: 80px;
+    border: 1px solid #ccc;
+    margin-top: 40px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .createNote {
+    height: auto;
+    width: 60px;
+    background: linear-gradient(to top, #eee, #bbb);
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    padding: 5px 0;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:active {
+      background: linear-gradient(to bottom, #eee, #bbb);
+    }
+  }
+  .PopClose {
+    color: $options-color;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 200ms ease;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}

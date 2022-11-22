@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/main.css" />
+    <title>Note Page</title>
+  </head>
+  <body>
+    <section draggable="false" class="np-main">
+      <div class="rBtn rightClick">Delete</div>
+      <div class="PopUp-main">
+        <i class="fa fa-xmark PopClose"></i>
+        <input
+          type="number"
+          min="5"
+          max="500"
+          maxlength="3"
+          value="300"
+          title="Its Can't be bigger than 500"
+          autofocus
+          placeholder="Height in Pixel"
+          class="EntHeight"
+        />
+
+        <input
+          type="number"
+          type="number"
+          min="5"
+          max="500"
+          maxlength="3"
+          value="250"
+          title="Its Can't be bigger than 500"
+          placeholder="Width in Pixel"
+          class="EntWidth"
+        />
+        <input type="color" value="#f6b73c" class="Pcolor" name="color-box" />
+        <button class="createNote">Create</button>
+      </div>
+      <nav class="aSide">
+        <div class="nav-burger">
+          <span class="burger nav-burger-spn"></span>
+        </div>
+        <ul class="options">
+          <li class="square options-item" title="Square"></li>
+          <li class="square-radius options-item" title="Radius"></li>
+          <li class="circle options-item" title="Circle"></li>
+          <li class="line options-item" title="Line"></li>
+          <li class="text options-item">T</li>
+        </ul>
+        <div class="aSide-btm">
+          <i class="fa fa-trash sideTrash btnIcon" title="Clear All"></i>
+          <i class="fa fa-user sideUser btnIcon" title="Account"></i>
+          <i class="fa fa-gear sideSetting btnIcon" title="Setting"></i>
+        </div>
+      </nav>
+    </section>
+    <script src="script/menu.js"></script>
+    <script src="script/addText.js"></script>
+    <script src="script/dragger.js"></script>
+    <script src="script/create.js"></script>
+  </body>
+</html>
