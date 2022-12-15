@@ -72,7 +72,7 @@ function Creator() {
     height : ${height}px;
     width : ${width}px;
     z-index : ${Nr};
-    background: rgba(${r},${g},${b},0.8);
+    background: rgba(${r},${g},${b},0.7);
     border-radius: ${radius}%;`;
   Nr++;
 
